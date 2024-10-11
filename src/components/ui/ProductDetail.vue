@@ -1,5 +1,5 @@
 <template>
-    <div class="block container mx-auto px-4 space-y-6">
+    <div class="block container mx-auto  space-y-6">
     <span
       class="font-satoshi md:text-[16px] text-[14px] px-3 flex items-center gap-2 fon-[400] text-black/60"
     >
@@ -30,7 +30,7 @@
 
     <div class="grid grid-cols-1 md:grid-cols-2 gap-x-28 h-full md:h-[530px]">
       <div
-        class="col-span-1 flex gap-3 px-8 justify-center items-center md:justify-between h-[290px] md:h-[530px] md:flex-row flex-col-reverse"
+        class="col-span-1 flex gap-3  justify-center items-center md:justify-between h-[290px] md:h-[530px] md:flex-row flex-col-reverse"
       >
         <div
           class="flex md:flex-col flex-row my-10 md:justify-center gap-9 h-[290px] md:h-[530px]"
@@ -70,7 +70,7 @@
         <div class="flex items-center">
           <div class="flex items-center">
             <span
-              v-for="star in getStarCount(product?.rating.rate as any )"
+              v-for="star in getStarCount(product?.rating.rate as any  )"
               :key="star"
             >
               <Icon
@@ -91,12 +91,12 @@
         <p
           class="font-satoshi font-SectionTitel md:text-[32px] text-[24px] flex items-center gap-3"
         >
-          ${{ Math.floor(product?.price as number ) }}
+          ${{ Math.floor(product?.price  ) }}
 
           <span
             class="font-satoshi font-SectionTitel md:text-[32px] line-through text-black/30 text-[24px]"
           >
-            ${{ Math.floor(product?.price / 3 as  number) }}
+            ${{ Math.floor(product?.price / 3  )  }}
           </span>
 
           <span
@@ -183,7 +183,7 @@
           </div>
 
           <button
-            @click="addToCart(product?.id as  any)"
+            @click="addToCart(product?.id)"
             class="w-[236px] h-[44px] text-[14px] md:text-[16px] rounded-[62px] bg-black text-white font-medium md:w-[400px] md:h-[52px]"
           >
             Add to Cart

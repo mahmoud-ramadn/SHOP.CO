@@ -26,23 +26,23 @@
       </button>
 
       <div
-        class="flex flex-wrap overflow-hidden items-center md:justify-start justify-center md:w-[596px] md:mx-0 mx-auto"
+        class="flex flex-wrap overflow-hidden items-center     md:justify-start justify-center md:w-[596px] md:mx-0 mx-auto"
       >
         <div class=" ">
-          <p class="text-[24px] md:text-[40px] font-[500] text-black">
+          <p class="text-[24px] md:text-[40px] font-[500]  text-end text-black px-3 ">
             200+
           </p>
-          <span class="md:text-[16px] text-[12px] text-black/60"
+          <span class="md:text-[16px] text-[12px] text-end  text-black/60"
             >International Brands</span
           >
         </div>
         <div
-          class="md:border-r-[1px] border-black/10 mx-7 border-l-[1px] text-center px-3"
+          class="md:border-r-[1px] border-black/10 mx-7 border-l-[1px]  px-3 "
         >
-          <p class="text-[24px] md:text-[40px] font-[500] text-black">
+          <p class="text-[24px] md:text-[40px] font-[500]   text-black">
             2,000+
           </p>
-          <span class="md:text-[16px] text-[12px] text-black/60"
+          <span class="md:text-[16px] text-[12px]   text-black/60"
             >High-Quality Products</span
           >
         </div>

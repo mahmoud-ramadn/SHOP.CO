@@ -1,7 +1,12 @@
 <template>
+
+  <div class=" container  px-4 mx-auto">
+
   <ProductDetail />
   <AllReview />
   <MighAlosLikeSection category="jewelery" hed="YOU MIGHT ALSO LIKE" />
+</div>
+
 </template>
 
 <script setup lang="ts">
