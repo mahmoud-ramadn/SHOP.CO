@@ -91,12 +91,12 @@
         <p
           class="font-satoshi font-SectionTitel md:text-[32px] text-[24px] flex items-center gap-3"
         >
-          ${{ Math.floor(product?.price  ) }}
+          ${{ Math.floor(product?.price  as number ) }}
 
           <span
             class="font-satoshi font-SectionTitel md:text-[32px] line-through text-black/30 text-[24px]"
           >
-            ${{ Math.floor(product?.price / 3  )  }}
+            ${{ Math.floor(Number(product?.price / 3) )  }}
           </span>
 
           <span
@@ -183,7 +183,7 @@
           </div>
 
           <button
-            @click="addToCart(product?.id)"
+            @click="addToCart(product?.id as number)"
             class="w-[236px] h-[44px] text-[14px] md:text-[16px] rounded-[62px] bg-black text-white font-medium md:w-[400px] md:h-[52px]"
           >
             Add to Cart

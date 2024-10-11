@@ -52,7 +52,7 @@
                 {{ item.title.substring(0, 20) }}
               </h2>
               <Icon
-                @click="() => removeFromCart(item.id  ) "
+                @click="() => removeFromCart(item.id as number  ) "
                 icon="gravity-ui:trash-bin"
                 class="md:w-6  w-5 md:h-6 h-5"
                 style="color: #ff0000"
@@ -66,7 +66,7 @@
               <p
                 class="font-SectionTitel font-satoshi  text-xl md:text-2xl"
               >
-                ${{Math.floor(item.price   )}}
+                ${{Math.floor(item.price as number )}}
               </p>
 
               <div
