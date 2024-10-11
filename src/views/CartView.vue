@@ -207,7 +207,7 @@ const Dicount = ref(
 );
 
 const Increment = (index: Number) => {
-  const item = cartList[index as any];
+  const item = cartList[index];
 
   item.count++;
 
