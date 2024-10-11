@@ -1,6 +1,10 @@
 <template>
+
+
 <Hero/>
+
   <Brand/>
+  
   <CardTemplet category="women's clothing" hed="TOP  SELLING" />
 
   <hr class="bg-black/10 h-[1px] my-10 container mx-auto" />

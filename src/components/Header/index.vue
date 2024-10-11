@@ -64,7 +64,12 @@
           icon="fluent:search-32-filled"
           width="24"
           height="24"
-          style="color: white"
+         
+          :class="{
+              '      text-white ': isScrolled,
+              'bg-transparent  text-black ': !isScrolled,
+            }"
+
         />
         <!-- Cart Icon with Notification -->
         <span class="relative">

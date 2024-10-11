@@ -1,6 +1,6 @@
 <template>
   <div
-    class="bg-black container absolute left-1/2 -translate-x-1/2 top-0 -translate-y-1/2 h-[293px] md:h-[180px] flex p-6 bottom-[30%] justify-center md:justify-around md:px-16 items-center flex-wrap mx-auto rounded-[20px]"
+    class="bg-black container absolute left-1/2 -translate-x-1/2 top-0 -translate-y-1/2 h-[293px] md:min-h-[180px] flex p-6 bottom-[30%] justify-center md:justify-around md:px-16 items-center flex-wrap mx-auto rounded-[20px]"
   >
     <h1
       class="md:text-[40px] text-white md:w-[551px] text-[32px] font-SectionTitel text-center md:text-left"

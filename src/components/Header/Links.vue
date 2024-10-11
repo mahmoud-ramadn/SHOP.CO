@@ -1,6 +1,6 @@
 <template>
   <div
-    class="md:flex hidden md:justify-between items-center justify-center md:min-w-[321px] h-5"
+    class="md:flex hidden md:justify-between items-center justify-center md:w-[321px] h-5"
   >
     <RouterLink to="#" class="flex items-center text-sm font-links">
       Shop

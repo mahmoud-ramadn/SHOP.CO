@@ -52,7 +52,7 @@
                 {{ item.title.substring(0, 20) }}
               </h2>
               <Icon
-                @click="() => removeFromCart(item.id   ) "
+                @click="() => removeFromCart(item.id  ) "
                 icon="gravity-ui:trash-bin"
                 class="md:w-6  w-5 md:h-6 h-5"
                 style="color: #ff0000"

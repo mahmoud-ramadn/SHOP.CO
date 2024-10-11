@@ -4,9 +4,9 @@
 <div class="container mx-auto md:h-[663px]">
 
 
-  <div class="grid md:grid-cols-2 grid-cols-1">
+   <div class="grid md:grid-cols-2 grid-cols-1  "> 
     <div
-      class="relative col-span-1 space-y-3 md:items-start flex flex-col md:justify-center px-7 justify-start"
+      class="relative col-span-1 md:w-fit p-2  space-y-3 md:items-start flex flex-col md:justify-center  justify-start"
     >
       <h1
         class="font-integralCF font-extrabold md:w-[577px] w-[315px] text-[36px] md:leading-[64px] leading-[50px] md:text-[64px]"
@@ -57,14 +57,21 @@
       </div>
     </div>
 
-    <div class="col-span-1 md:h-[663px] h-[448px]">
+    <div class="col-span-1 md:h-[663px]  ">
       <img
-        class="w-full h-full object-cover"
+        class="w-full h-full md:w-fit  object-contain "
         src="../../assets/hero.svg"
         alt=""
       />
     </div>
-  </div>
+  </div> 
+
+
+
+
+
+
+
 </div>
 </div>
 
