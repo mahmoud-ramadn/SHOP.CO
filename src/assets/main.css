@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@font-face {
+    font-family: 'Satoshi';
+    src: url('/fonts/Satoshi-Regular.woff2') format('woff2'),
+         url('/fonts/Satoshi-Bold.woff2') format('woff2');
+    font-weight: 400; /* regular */
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Satoshi';
+    src: url('/fonts/Satoshi-Bold.woff2') format('woff2');
+    font-weight: 700; /* bold */
+    font-style: normal;
+  }
+  
+  /* Integral CF Font */
+  @font-face {
+    font-family: 'Integral CF';
+    src: url('/fonts/IntegralCF-Regular.woff2') format('woff2'),
+         url('/fonts/IntegralCF-Bold.woff2') format('woff2');
+    font-weight: 400; /* regular */
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Integral CF';
+    src: url('/fonts/IntegralCF-Bold.woff2') format('woff2');
+    font-weight: 700; /* bold */
+    font-style: normal;
+  }
+  
