@@ -39,7 +39,7 @@
             class="object-contain md:w-full md:h-[25%] rounded-[20px] h-[106px] w-[111px]"
             :src="product?.image"
             alt=""
-            @click="getUrlimg(product?.image   )"
+            @click="getUrlimg(product?.image ?? ' test ' )"
           />
           <img
             v-for="(img, index) in imgs"
@@ -70,7 +70,7 @@
         <div class="flex items-center">
           <div class="flex items-center">
             <span
-              v-for="star in getStarCount(product?.rating.rate as any  )"
+              v-for="star in getStarCount(product?.rating.rate ?? 0 )"
               :key="star"
             >
               <Icon
@@ -91,12 +91,12 @@
         <p
           class="font-satoshi font-SectionTitel md:text-[32px] text-[24px] flex items-center gap-3"
         >
-          ${{ Math.floor(product?.price  as number ) }}
+          ${{ Math.floor(product?.price  ?? 0) }}
 
           <span
             class="font-satoshi font-SectionTitel md:text-[32px] line-through text-black/30 text-[24px]"
           >
-            ${{ Math.floor(Number(product?.price / 3) )  }}
+            ${{Math.floor((product?.price ?? 0) / 3)  }}
           </span>
 
           <span
@@ -183,7 +183,7 @@
           </div>
 
           <button
-            @click="addToCart(product?.id as number)"
+            @click="addToCart(product?.id ?? 0)"
             class="w-[236px] h-[44px] text-[14px] md:text-[16px] rounded-[62px] bg-black text-white font-medium md:w-[400px] md:h-[52px]"
           >
             Add to Cart

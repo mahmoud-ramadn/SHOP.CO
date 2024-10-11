@@ -66,7 +66,7 @@
               <p
                 class="font-SectionTitel font-satoshi  text-xl md:text-2xl"
               >
-                ${{Math.floor(item.price as number )}}
+                ${{Math.floor(Number(item?.price) || 0) }}
               </p>
 
               <div
