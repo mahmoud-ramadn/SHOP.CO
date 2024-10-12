@@ -6,7 +6,7 @@
 
    <div class="grid md:grid-cols-2 grid-cols-1  "> 
     <div
-      class="relative col-span-1 md:w-fit p-2  space-y-3 md:items-start flex flex-col md:justify-center  justify-start"
+      class="relative col-span-1 md:w-fit p-2  space-y-3 md:items-start flex flex-col md:justify-center    "
     >
       <h1
         class="font-integralCF font-extrabold md:w-[577px] w-[315px] text-[36px] md:leading-[64px] leading-[50px] md:text-[64px]"
@@ -26,27 +26,29 @@
       </button>
 
       <div
-        class="flex flex-wrap overflow-hidden items-center     md:justify-start justify-center md:w-[596px] md:mx-0 mx-auto"
+        class="   grid  grid-cols-4        md:mx-0 "
       >
-        <div class=" ">
-          <p class="text-[24px] md:text-[40px] font-[500]  text-end text-black px-3 ">
+        <div class="  md:col-span-1  col-span-2 md:text-start  pl-2 text-center  ">
+          <p class="text-[24px] md:text-[40px] font-[500]   text-black  ">
             200+
           </p>
-          <span class="md:text-[16px] text-[12px] text-end  text-black/60"
+          <span class="md:text-[16px] text-[12px]   text-black/60"
             >International Brands</span
           >
         </div>
-        <div
-          class="md:border-r-[1px] border-black/10 mx-7 border-l-[1px]  px-3 "
-        >
-          <p class="text-[24px] md:text-[40px] font-[500]   text-black">
+        
+        <div class="    md:col-span-1 px-5   border-l-[1px] md:border-r-[1px]  md:text-start  pl-2 text-center   col-span-2      ">
+          <p class="text-[24px] md:text-[40px]  font-medium   text-black">
             2,000+
           </p>
           <span class="md:text-[16px] text-[12px]   text-black/60"
             >High-Quality Products</span
           >
         </div>
-        <div class=" ">
+      
+
+      
+        <div class="   md:col-span-1  col-span-4 md:text-start  pl-2 text-center    ">
           <p class="text-[24px] md:text-[40px] font-[500] text-black">
             30,000+
           </p>

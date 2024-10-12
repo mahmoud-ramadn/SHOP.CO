@@ -21,11 +21,11 @@
 
     <div
       :class="{
-        '    bg-black/95    text-white rounded-md md:py-5   p-2    ':
+        '    bg-black/95    text-white rounded-md md:py-5   p-2  top-10   ':
           isScrolled,
-        'bg-transparen  px-2 ': !isScrolled,
+        'bg-transparen  px-2  top-20  ': !isScrolled,
       }"
-      class="flex items-center justify-between container mx-auto duration-150 transition-all ease-in-out z-50 top-20 -translate-y-1/2 fixed left-1/2 -translate-x-1/2"
+      class="flex items-center justify-between container mx-auto duration-150 transition-all ease-in-out z-50 -translate-y-1/2 fixed left-1/2 -translate-x-1/2"
     >
       <div class="flex items-center space-x-2">
         <Icon
