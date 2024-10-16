@@ -21,7 +21,7 @@
 
     <div
       :class="{
-        '    bg-black/95    text-white rounded-md md:py-5   p-2  top-10   ':
+        '     bg-white  rounded-md md:py-5   p-2  top-10   ':
           isScrolled,
         'bg-transparen  px-2  top-20  ': !isScrolled,
       }"
@@ -35,7 +35,7 @@
           width="20px"
           height="20px"
           class="block lg:hidden"
-          :class="{ ' text-white ': isScrolled, '  text-black ': !isScrolled }"
+   
         />
 
         <Icon
@@ -45,7 +45,6 @@
           width="24"
           height="24"
           class="block lg:hidden"
-          :class="{ ' text-white ': isScrolled, '  text-black ': !isScrolled }"
         />
 
         <RouterLink to="/" class="font-extrabold font-integralCF text-2xl">
@@ -60,15 +59,11 @@
       <div class="flex items-center h-6 w-24 md:w-16 md:gap-x-3 gap-x-2">
         <!-- Mobile Search Icon -->
         <Icon
-          class="md:hidden block"
+          class="md:hidden block text-black "
           icon="fluent:search-32-filled"
           width="24"
+          
           height="24"
-         
-          :class="{
-              '      text-white ': isScrolled,
-              'bg-transparent  text-black ': !isScrolled,
-            }"
 
         />
         <!-- Cart Icon with Notification -->
@@ -78,18 +73,14 @@
             icon="bx:cart"
             width="24"
             height="24"
-            :class="{
-              '      text-white ': isScrolled,
-              'bg-transparent': !isScrolled,
-            }"
+           class=" text-black "
           />
           <span
             v-if="cartList.length"
-            class="w-[20px] h-[20px] text-[12px] bottom-[16px] animate-pulse -right-[11px] flex justify-center items-center rounded-full absolute"
-            :class="{
-              ' bg-white  text-black ': isScrolled,
-              ' bg-black text-white ': !isScrolled,
-            }"
+            class="w-[20px] h-[20px] 
+             text-white bg-black
+            text-[12px] bottom-[16px] animate-pulse -right-[11px] flex justify-center items-center rounded-full absolute"
+            
           >
             {{ cartList.length }}
           </span>
@@ -99,10 +90,7 @@
           icon="mingcute:user-4-line"
           width="24"
           height="24"
-          :class="{
-            '      text-white ': isScrolled,
-            'bg-transparent': !isScrolled,
-          }"
+         class=" text-black"
         />
       </div>
 

@@ -1,86 +1,34 @@
 
-
-
-
-<template>
-  <div class="container my-6 mx-auto">
-    <div class="grid md:grid-cols-2 grid-cols-1 gap-6">
-      <div
+<template lang="pug">
+  div(class="container my-6 mx-auto")
+    div(class="grid md:grid-cols-2 grid-cols-1 gap-6")
+      div(
         v-for="(card, index) in cards"
         :key="index"
         class="col-span-1 flex flex-col justify-center items-start md:p-7 p-5 border-[1px] space-y-5 rounded-[20px]"
-      >
-        <div class="flex items-center">
-          <Icon
-            icon="ic:sharp-star-rate"
-            class="w-5 h-5 md:w-6 md:h-6 text-yellow"
-          />
-          <Icon
-            icon="ic:sharp-star-rate"
-            class="w-5 h-5 md:w-6 md:h-6 text-yellow"
-          />
-          <Icon
-            icon="ic:sharp-star-rate"
-            class="w-5 h-5 md:w-6 md:h-6 text-yellow"
-          />
-          <Icon
-            icon="ic:sharp-star-rate"
-            class="w-5 h-5 md:w-6 md:h-6 text-yellow"
-          />
-          <Icon
-            icon="ic:sharp-star-rate"
-            class="w-5 h-5 md:w-6 md:h-6 text-yellow"
-          />
-        </div>
-
-        <div class="flex justify-between items-center w-full">
-          <h2 class="md:text-xl text-sm font-satoshi font-SectionTitel">
-            {{ card.title }}
-            <Icon
-              icon="fa6-solid:circle-check"
-              class="inline-block  w-5  h-5 md:w-6 md:h-6 text-greencricle"
-            />
-          </h2>
-          <Icon
-            icon="bi:three-dots"
-            class="md:block hidden text-black/60"
-            width="24"
-            height="24"
-          />
-        </div>
-
-        <p
-          class="font-satoshi text-xs md:text-sm text-black/60  font-normal"
-        >
-          {{ card.dec }}
-        </p>
-
-        <p
-          class="font-satoshi text-xs md:text-sm text-black/60  font-normal "
-        >
-          {{ card.data }}
-        </p>
-      </div>
-    </div>
-
-    <div class="w-full my-6 flex justify-center">
-      <button
+      )
+        div(class="flex items-center")
+          Icon(icon="ic:sharp-star-rate" class="w-5 h-5 md:w-6 md:h-6 text-yellow")
+          Icon(icon="ic:sharp-star-rate" class="w-5 h-5 md:w-6 md:h-6 text-yellow")
+          Icon(icon="ic:sharp-star-rate" class="w-5 h-5 md:w-6 md:h-6 text-yellow")
+          Icon(icon="ic:sharp-star-rate" class="w-5 h-5 md:w-6 md:h-6 text-yellow")
+          Icon(icon="ic:sharp-star-rate" class="w-5 h-5 md:w-6 md:h-6 text-yellow")
+        
+        div(class="flex justify-between items-center w-full")
+          h2(class="md:text-xl text-sm font-satoshi font-SectionTitel") {{ card.title }}
+           Icon(icon="fa6-solid:circle-check" class="inline-block w-5 h-5 md:w-6 md:h-6 text-greencricle")
+          Icon(icon="bi:three-dots" class="md:block hidden text-black/60" width="24" height="24")
+        
+        p(class="font-satoshi text-xs md:text-sm text-black/60 font-normal") {{ card.dec }}
+        p(class="font-satoshi text-xs md:text-sm text-black/60 font-normal") {{ card.data }}
+      
+    div(class="w-full my-6 flex justify-center")
+      button(
         @click="loadmore"
-        class="rounded-full w-[230px] h-[52px]  font-medium  md:text-sm text-xs font-satoshi text-black border-[1px]"
-      >
-        Load More Reviews
-      </button>
-    </div>
-  </div>
-
-
-  <h1 class="   text-xs  texsm ">
-
-  </h1>
-
+        class="rounded-full w-[230px] h-[52px] font-medium md:text-sm text-xs font-satoshi text-black border-[1px]"
+      ) Load More Reviews
 </template>
-  
-  
+
   
   <script setup lang="ts">
 import { Icon } from "@iconify/vue/dist/iconify.js";
@@ -119,7 +67,7 @@ const cards = ref([
   },
 ]);
 
-const  LoadeMoreArry= [
+const LoadeMoreArry = [
   {
     title: "Chris P.",
     dec: "The attention to detail in this shirt is outstanding. From the fabric to the design, everything feels premium and well thought out.",

@@ -8,7 +8,7 @@
       style="color: #00000066"
     />
     <input
-      class="lg:min-w-[557px]  md:min-[330px]    h-12 focus:border-blue-100 text-black rounded-full px-11 bg-browser placeholder:font-normal placeholder:text-sm placeholder:text-black/40"
+      class="lg:min-w-[557px] md:min-[330px] h-12 focus:border-blue-100 text-black rounded-full px-11 bg-browser placeholder:font-normal placeholder:text-sm placeholder:text-black/40"
       type="search"
       placeholder="Search for products..."
     />
