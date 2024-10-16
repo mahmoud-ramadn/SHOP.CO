@@ -21,55 +21,30 @@ export const useCartStore = defineStore('cart', () => {
 
 
 
-    //  add to Cart
+    //  addTocart
+
 
     const addToCart = async (id: Number) => {
-
-        const exixts = cartList.value.find((item) => item.id === id);
-
-
-        if (exixts) return;
-
-
+        const exists = cartList.value.find((item) => item.id === id);
+    
+        if (exists) return;
+    
         try {
-
-
-
             const res = await fetch(`https://fakestoreapi.com/products/${id}`);
-
-            const product = await res.json()
-
-
-
-
-            cartList.value.push(product)
-
-            cartList.value.map(it => it.count = 1)
-            saveCart()
-
-
-
-
-
-
-
-
-
+            const product = await res.json();
+            const newProduct = { ...product, count: 1, quantity: 1 };
+    
+            cartList.value.push(newProduct);
+    
+            saveCart();
+    
         } catch (err) {
             console.error(err);
-
-
         }
+    };
 
 
 
-
-
-
-
-
-
-    }
 
     //  remove 
 

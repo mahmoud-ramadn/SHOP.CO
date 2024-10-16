@@ -21,8 +21,7 @@
 
     <div
       :class="{
-        '     bg-white  rounded-md md:py-5   p-2  top-10   ':
-          isScrolled,
+        '     bg-white  rounded-md md:py-5   p-2  top-10   ': isScrolled,
         'bg-transparen  px-2  top-20  ': !isScrolled,
       }"
       class="flex items-center justify-between container mx-auto duration-150 transition-all ease-in-out z-50 -translate-y-1/2 fixed left-1/2 -translate-x-1/2"
@@ -35,7 +34,6 @@
           width="20px"
           height="20px"
           class="block lg:hidden"
-   
         />
 
         <Icon
@@ -59,12 +57,10 @@
       <div class="flex items-center h-6 w-24 md:w-16 md:gap-x-3 gap-x-2">
         <!-- Mobile Search Icon -->
         <Icon
-          class="md:hidden block text-black "
+          class="md:hidden block text-black"
           icon="fluent:search-32-filled"
           width="24"
-          
           height="24"
-
         />
         <!-- Cart Icon with Notification -->
         <span class="relative">
@@ -73,14 +69,11 @@
             icon="bx:cart"
             width="24"
             height="24"
-           class=" text-black "
+            class="text-black"
           />
           <span
             v-if="cartList.length"
-            class="w-[20px] h-[20px] 
-             text-white bg-black
-            text-[12px] bottom-[16px] animate-pulse -right-[11px] flex justify-center items-center rounded-full absolute"
-            
+            class="w-[20px] h-[20px] text-white bg-black text-[12px] bottom-[16px] animate-pulse -right-[11px] flex justify-center items-center rounded-full absolute"
           >
             {{ cartList.length }}
           </span>
@@ -90,7 +83,7 @@
           icon="mingcute:user-4-line"
           width="24"
           height="24"
-         class=" text-black"
+          class="text-black"
         />
       </div>
 

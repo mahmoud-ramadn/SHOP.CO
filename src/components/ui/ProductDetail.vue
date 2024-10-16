@@ -56,7 +56,7 @@
           | Choose Size
         
         div(class="btn my-2 gap-4 flex")
-          div(v-for="(ball, index) in btns", :key="index", :class="{ active: selectedBtn === index }", class="rounded-full bg-card md:w-[105px] flex items-center justify-center md:h-[46px] w-[89px] h-[39px] cursor-pointer", @click="clieckbtn(index)")
+          div(v-for="(ball, index) in btns", :key="index", :class="{ active: selectedBtn === index }", class="rounded-full bg-card md:w-[105px] flex items-center justify-center md:h-[46px] w-[89px] h-[39px] cursor-pointer", @click="clickBtn(index)")
             | {{ ball.value }}
         
         hr(class="my-5")
@@ -184,7 +184,7 @@ const selectedColorIndex = ref<number | null>(null);
 
 const selectedBtn = ref<number | null>(0);
 
-const clieckbtn = (index: number) => {
+const clickBtn = (index: number) => {
   selectedBtn.value = index;
 };
 
